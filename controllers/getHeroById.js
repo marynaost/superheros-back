@@ -9,6 +9,7 @@ const getHeroById = async (req, res, next) => {
       code: 404,
       message: `Hero with id = ${heroId} not found`,
     });
+
     return;
   }
 
