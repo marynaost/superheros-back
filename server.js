@@ -4,7 +4,9 @@ const mongoose = require("mongoose");
 // const { DB_HOST } = process.env;
 
 mongoose
-  .connect(process.env.DB_HOST)
+  .connect(
+    "mongodb+srv://Maryna:01111995nm@cluster0.avjyq.mongodb.net/superheroes?retryWrites=true&w=majority"
+  )
   .then(() => {
     console.log("Database connection successful");
     app.listen(3000);
