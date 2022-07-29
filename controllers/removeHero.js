@@ -14,9 +14,7 @@ const removeHero = async (req, res, next) => {
     status: "success",
     code: 200,
     message: "hero deleted",
-    data: {
-      result,
-    },
+    data: result,
   });
 };
 

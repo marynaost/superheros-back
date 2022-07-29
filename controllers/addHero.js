@@ -5,9 +5,7 @@ const addHero = async (req, res, next) => {
   res.status(201).json({
     status: "created",
     code: 201,
-    data: {
-      result,
-    },
+    data: result
   });
 };
 

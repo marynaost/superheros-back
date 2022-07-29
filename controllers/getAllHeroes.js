@@ -12,9 +12,7 @@ const getAllHeroes = async (req, res, next) => {
   res.json({
     status: "success",
     code: 200,
-    data: {
-      result: heroes,
-    },
+    data: heroes,
   });
 };
 

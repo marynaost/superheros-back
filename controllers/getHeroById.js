@@ -16,9 +16,7 @@ const getHeroById = async (req, res, next) => {
   res.json({
     status: "success",
     code: 200,
-    data: {
-      result: hero,
-    },
+    data: hero,
   });
 };
 
