@@ -26,13 +26,9 @@ const heroesSchema = Schema(
       default:
         "https://cdn.pixabay.com/photo/2017/07/19/17/26/gabriel-2519793_960_720.jpg",
     },
-
-    // images: {
-    //   type: [String],
-    // },
   },
   { versionKey: false, timestamps: true }
 );
 
-const Realty = model("heroe", heroesSchema);
-module.exports = { Realty };
+const Hero = model("heroe", heroesSchema);
+module.exports = { Hero };

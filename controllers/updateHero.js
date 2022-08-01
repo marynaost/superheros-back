@@ -1,4 +1,4 @@
-const { Realty } = require("../models/heroes");
+const { Hero } = require("../models/heroes");
 const updateHero = async (req, res, next) => {
   const { heroId } = req.params;
   if (!req.body) {
@@ -9,7 +9,7 @@ const updateHero = async (req, res, next) => {
     });
     return;
   }
-  const result = await Realty.findByIdAndUpdate(heroId, req.body, {
+  const result = await Hero.findByIdAndUpdate(heroId, req.body, {
     new: true,
   });
   if (!result) {

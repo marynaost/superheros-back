@@ -1,7 +1,7 @@
-const { Realty } = require("../models/heroes");
+const { Hero } = require("../models/heroes");
 const getHeroById = async (req, res, next) => {
   const { heroId } = req.params;
-  const hero = await Realty.findById(heroId);
+  const hero = await Hero.findById(heroId);
 
   if (!hero) {
     res.status(404).json({

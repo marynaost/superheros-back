@@ -1,7 +1,7 @@
-const { Realty } = require("../models/heroes");
+const { Hero } = require("../models/heroes");
 const removeHero = async (req, res, next) => {
   const { heroId } = req.params;
-  const result = await Realty.findByIdAndRemove(heroId);
+  const result = await Hero.findByIdAndRemove(heroId);
   if (!result) {
     res.status(404).json({
       status: "error",

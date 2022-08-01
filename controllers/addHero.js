@@ -1,11 +1,11 @@
-const { Realty } = require("../models/heroes");
+const { Hero } = require("../models/heroes");
 
 const addHero = async (req, res, next) => {
-  const result = await Realty.create(req.body);
+  const result = await Hero.create(req.body);
   res.status(201).json({
     status: "created",
     code: 201,
-    data: result
+    data: result,
   });
 };
 
